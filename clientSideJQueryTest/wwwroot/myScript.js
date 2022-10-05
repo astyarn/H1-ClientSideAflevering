@@ -42,7 +42,7 @@
         if (img.hasClass("rotateimage")) {
             img.attr("data-flipped", "true");
             img.animate({ left: '8px', opacity: '1' });
-            $("#footer").css("position", "absolute");
+            $("#footer").css("position", "fixed");
             $("#footer").slideDown(500);
             $(".menu").slideDown(500);
             btn.removeClass("redBtn");
@@ -52,7 +52,7 @@
             img.animate({ left: '35%', opacity: '0.4' });
             btn.addClass("redBtn");
             btn.text("Reset billede, menu og footer!");
-            $("#footer").css("position", "fixed");
+            $("#footer").css("position", "absolute");
             $("#footer").slideUp(500);
             $(".menu").slideUp(500);
 
@@ -82,3 +82,4 @@ function pad(str, max) {
     str = str.toString();
     return str.length < max ? pad("0" + str, max) : str;
 }
+

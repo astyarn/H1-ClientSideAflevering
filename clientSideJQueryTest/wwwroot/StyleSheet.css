@@ -150,3 +150,23 @@ td {
   background: #008a03;
   color: #FFF;
 }
+
+.effect {
+  transition: all 1.2s cubic-bezier(0.62, 0.01, 0.75, 1.02);
+  top: 7em;
+}
+
+.effect:hover {
+  background-color: darkgoldenrod;
+  font-size: 72px;
+  top: 0;
+}
+
+.centerTekst {
+  text-align: center;
+}
+
+.experiment {
+  white-space: pre-line;
+  white-space: pre-wrap;
+}
